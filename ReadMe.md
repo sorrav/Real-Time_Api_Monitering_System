@@ -17,7 +17,15 @@
 ```
 ---
 
-## 🚀 Installation
+## 🎨 Screenshots
+
+<img width="1709" height="907" alt="Screenshot 2025-11-17 210146" src="https://github.com/user-attachments/assets/f432789c-1db8-44ed-9d34-efd38c2b799b" />
+
+<img width="1575" height="837" alt="Screenshot 2025-11-17 210308" src="https://github.com/user-attachments/assets/0262040c-8bbe-485e-b8ee-6a3c8a525cf8" />
+
+<img width="1691" height="853" alt="Screenshot 2025-11-17 210249" src="https://github.com/user-attachments/assets/6c10c2b6-9bef-4cc0-90a6-d94fa466c472" />
+
+allation
 
 ### 1. Clone the Repository
 ```bash
