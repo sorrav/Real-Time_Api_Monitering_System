@@ -4,14 +4,16 @@
   "description": "Real-time health monitoring system for APIs and websites",
   "main": "index.js",
   "scripts": {
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../worker && pip install -r requirements.txt",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../worker && python -m venv venv && venv\\Scripts\\pip.exe install -r requirements.txt",
+    
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:worker\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
-    "dev:worker": "cd worker && python -m uvicorn app.main:app --reload --port 8000",
+    "dev:worker": "cd worker && venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --port 8000",
     "dev:frontend": "cd frontend && npm start",
+    
     "start": "concurrently \"npm run start:backend\" \"npm run start:worker\" \"npm run start:frontend\"",
     "start:backend": "cd backend && npm start",
-    "start:worker": "cd worker && python -m uvicorn app.main:app --port 8000",
+    "start:worker": "cd worker && venv\\Scripts\\python.exe -m uvicorn app.main:app --port 8000",
     "start:frontend": "cd frontend && npm start"
   },
   "keywords": [
