@@ -1,4 +1,44 @@
+# 🔍 Real-time API/URL Health Monitoring System
 
+A full-stack microservice application for monitoring the health, performance, and uptime of websites and APIs in real-time.
+
+## ✨ Features
+
+### Core Functionality
+- ✅ **Real-time Monitoring** - WebSocket-based live status updates
+- 📊 **Performance Metrics** - Response time tracking and latency analysis
+- 📈 **Interactive Charts** - Visual representation of historical data
+- 🎯 **Smart Filtering** - Filter by status, favorites, and latency
+- ⭐ **Favorites System** - Quick access to critical monitors
+- ⏸️ **Pause/Resume** - Temporarily disable monitoring
+- 🔔 **Status History** - Complete audit trail of all checks
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React 19** with TypeScript
+- **Tailwind CSS** for styling
+- **Recharts** for data visualization
+- **Socket.IO Client** for real-time updates
+- **Axios** for HTTP requests
+- **React Router** for navigation
+
+### Backend
+- **Node.js** with Express.js
+- **Socket.IO** for WebSocket communication
+- **MongoDB** with Mongoose ODM
+- **JWT** for authentication
+- **Bcrypt** for password hashing
+
+### Worker Service
+- **Python 3.8+**
+- **FastAPI** framework
+- **Requests** library for HTTP checks
+- **APScheduler** for background tasks
+- **PyMongo** for database operations
+
+---
+  
 ## 🏗️ Architecture
 ```
 ┌─────────────┐         ┌──────────────┐         ┌─────────────┐
