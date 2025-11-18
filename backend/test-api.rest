@@ -1,0 +1,73 @@
+### Health Check
+GET http://localhost:5000/api/status
+
+### Register User
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+### Get Current User (Replace TOKEN with actual token from login)
+GET http://localhost:5000/api/auth/me
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Create Monitor
+POST http://localhost:5000/api/monitors
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "name": "Google Homepage",
+  "url": "https://www.google.com",
+  "method": "GET",
+  "interval": 60,
+  "timeout": 30,
+  "isFavorite": true
+}
+
+### Get All Monitors
+GET http://localhost:5000/api/monitors
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Get Monitors with Filters
+GET http://localhost:5000/api/monitors?status=up&favorite=true&sort=latency-desc
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Update Monitor (Replace MONITOR_ID)
+PUT http://localhost:5000/api/monitors/MONITOR_ID
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "name": "Google Updated",
+  "isFavorite": false
+}
+
+### Toggle Favorite
+PATCH http://localhost:5000/api/monitors/MONITOR_ID/favorite
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Toggle Active/Pause
+PATCH http://localhost:5000/api/monitors/MONITOR_ID/toggle
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Delete Monitor
+DELETE http://localhost:5000/api/monitors/MONITOR_ID
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### Get Health Records
+GET http://localhost:5000/api/health/MONITOR_ID?timeRange=24h&limit=100
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
