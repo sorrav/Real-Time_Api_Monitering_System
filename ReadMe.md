@@ -1,45 +1,43 @@
-# 🔍 Real-time API/URL Health Monitoring System
+# Real-time API/URL Health Monitoring System
 
 A full-stack microservice application for monitoring the health, performance, and uptime of websites and APIs in real-time.
 
-## ✨ Features
+## Features
 
 ### Core Functionality
-- ✅ **Real-time Monitoring** - WebSocket-based live status updates
-- 📊 **Performance Metrics** - Response time tracking and latency analysis
-- 📈 **Interactive Charts** - Visual representation of historical data
-- 🎯 **Smart Filtering** - Filter by status, favorites, and latency
-- ⭐ **Favorites System** - Quick access to critical monitors
-- ⏸️ **Pause/Resume** - Temporarily disable monitoring
-- 🔔 **Status History** - Complete audit trail of all checks
+- **Real-time Monitoring** - WebSocket-based live status updates
+- **Performance Metrics** - Response time tracking and latency analysis
+- **Interactive Charts** - Visual representation of historical data
+- **Smart Filtering** - Filter by status, favorites, and latency
+- **Favorites System** - Quick access to critical monitors
+- **Pause/Resume** - Temporarily disable monitoring
+- **Status History** - Complete audit trail of all checks
 
 ## 🛠️ Tech Stack
 
 ### Frontend
 - **React 19** with TypeScript
-- **Tailwind CSS** for styling
-- **Recharts** for data visualization
-- **Socket.IO Client** for real-time updates
-- **Axios** for HTTP requests
-- **React Router** for navigation
+- **Tailwind CSS** 
+- **Recharts** for visualization of past records through graphs
+- **React Router**
 
 ### Backend
 - **Node.js** with Express.js
 - **Socket.IO** for WebSocket communication
-- **MongoDB** with Mongoose ODM
-- **JWT** for authentication
-- **Bcrypt** for password hashing
+- **MongoDB**
+- **JWT**
+- **Bcrypt**
 
 ### Worker Service
 - **Python 3.12**
 - **FastAPI** framework
-- **Requests** library for HTTP checks
-- **APScheduler** for background tasks
-- **PyMongo** for database operations
+- **Requests**
+- **APScheduler**
+- **PyMongo**
 
 ---
   
-## 🏗️ Architecture
+## Architecture
 ```
 ┌─────────────┐         ┌──────────────┐         ┌─────────────┐
 │   Frontend  │◄───────►│   Backend    │◄───────►│   MongoDB   │
@@ -57,7 +55,7 @@ A full-stack microservice application for monitoring the health, performance, an
 ```
 ---
 
-## 🎨 Screenshots
+## Screenshots
 
 <img width="1709" height="907" alt="Screenshot 2025-11-17 210146" src="https://github.com/user-attachments/assets/f432789c-1db8-44ed-9d34-efd38c2b799b" />
 
@@ -65,14 +63,14 @@ A full-stack microservice application for monitoring the health, performance, an
 
 <img width="1691" height="853" alt="Screenshot 2025-11-17 210249" src="https://github.com/user-attachments/assets/6c10c2b6-9bef-4cc0-90a6-d94fa466c472" />
 
-## 📝 Notes
+## Notes
 
 - Make sure to replace MongoDB connection strings in `.env` files
 - Default check interval is 30 seconds (configurable)
 - JWT tokens expire after 7 days
 - Health records older than 30 days are automatically deleted
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 ```bash
@@ -130,7 +128,7 @@ REACT_APP_API_URL=http://localhost:5000
 REACT_APP_SOCKET_URL=http://localhost:5000
 EOF
 ```
-## 🎮 Running the Application
+## Running the Application
 
 #### Terminal 1 - Backend
 ```bash
