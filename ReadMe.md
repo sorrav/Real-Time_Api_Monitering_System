@@ -31,7 +31,7 @@ A full-stack microservice application for monitoring the health, performance, an
 - **Bcrypt** for password hashing
 
 ### Worker Service
-- **Python 3.8+**
+- **Python 3.12**
 - **FastAPI** framework
 - **Requests** library for HTTP checks
 - **APScheduler** for background tasks
